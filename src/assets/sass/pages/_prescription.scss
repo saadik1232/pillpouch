@@ -1,0 +1,105 @@
+.prescription-info{
+    padding: 50px;
+    @include upto-tablet{
+        padding: 30px;
+    }
+    @include upto-small{
+        padding: 15px;
+    }
+    .patient-name{
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        span{
+            display: block;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            color: #949494;
+
+        }
+    }
+    h3{
+        font-weight: bold;
+        font-size: 19.5169px;
+        line-height: 24px;
+        margin-bottom: 35px;
+    }
+    
+}
+.timing-table{
+    .table{
+        tr{
+            th{
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+                background: #F5F5F5;
+                vertical-align: middle;
+                border: 0;
+                text-align: center;
+                &:first-child{
+                    text-align: left;
+                }
+                img{
+                    max-width: 24px;
+                    margin-right: 2px;
+                }
+            }
+            td{
+                text-align: center;
+                border: 0;
+                font-size: 13px;
+                line-height: 19px;
+                text-transform: capitalize;
+                padding: 25px 12px;
+                color: #9B9B9B;
+                border-bottom: 1px dashed #A2C0D4;
+                &:first-child{
+                    text-align: left;
+                }
+            }
+            &:last-child{
+                td{
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+.uploadedprescription{
+    td{
+        vertical-align: middle;
+        .url_anchor{
+            margin: 8px 0;
+            display: block;
+            color: $green-color;
+            max-width: 600px;
+            &:hover{
+                color:#414D55;
+            }
+        }
+        .create-btn{
+            color: $green-color;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            -webkit-appearance: none;
+            background: transparent;
+            border: 1px solid $green-color;
+            border-radius: 56.01px;
+            padding: 8px 14px ;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                cursor: pointer;
+                background: $green-color;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.document-text{
+	margin: 90px 0;
+	@include upto-desktop{
+		margin: 60px 0;
+	}
+	@include upto-tablet{
+		margin: 30px 0;
+	}
+	.title{
+		font-size: 44px;
+		line-height: 62px;
+		font-family: $font-interB;
+		color: #04004D;
+		margin-bottom: 17px;
+		@include upto-desktop{
+			font-size: 40px;
+			line-height: 58px;
+		}
+		@include upto-tablet{
+			font-size: 32px;
+			line-height: 50px;
+			margin-bottom: 0;
+		}
+		@include upto-small{
+			font-size: 26px;
+			line-height: 42px;
+		}
+	}
+	.date{
+		font-size: 26px;
+		line-height: 44px;
+		margin-bottom: 15px;
+		color: $green-color;
+		@include upto-desktop{
+			font-size: 22px;
+			line-height: 40px;
+		}
+		@include upto-tablet{
+			font-size: 18px;
+			line-height: 36px;
+			margin-bottom: 10px;
+		}
+		@include upto-small{
+			font-size: 16px;
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+	}
+	h2{
+		font-size: 30px;
+		line-height: 42px;
+		font-family: $font-interB;
+		color: #04004D;
+		margin-bottom: 10px;
+		@include upto-desktop{
+			font-size: 26px;
+			line-height: 38px;
+		}
+		@include upto-tablet{
+			font-size: 22px;
+			line-height: 34px;
+		}
+		@include upto-small{
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	p{
+		font-size: 20px;
+		line-height: 38px;
+		color: #000000;
+		margin-bottom: 24px;
+		@include upto-desktop{
+			font-size: 18px;
+			line-height: 34px;
+			margin-bottom: 20px;
+		}
+		@include upto-tablet{
+			font-size: 16px;
+			line-height: 30px;
+			margin-bottom: 15px;
+		}
+		@include upto-small{
+			font-size: 14px;
+			line-height: 28px;
+			margin-bottom: 10px;
+		}
+		a{
+			color: $green-color;
+			text-decoration: none;
+			&:hover{
+				color: $green-color;
+			}
+		}
+	}
+	hr{
+		margin: 60px 0;
+		border-top: 2px solid #CFCFCF;
+		@include upto-desktop{
+			margin: 50px 0;
+		}
+		@include upto-tablet{
+			margin: 30px 0;
+		}
+	}
+	ul {
+		padding-left: 25px;
+		list-style: none;
+		@include upto-small{
+			padding-left: 18px;
+		}
+
+		li {
+			font-size: 20px;
+			line-height: 38px;
+			margin-bottom: 20px;
+			color: #000000;
+			@include upto-desktop{
+				font-size: 18px;
+				line-height: 34px;
+				margin-bottom: 16px;
+			}
+			@include upto-tablet{
+				font-size: 16px;
+				line-height: 30px;
+				margin-bottom: 12px;
+			}
+			@include upto-small{
+				font-size: 14px;
+				line-height: 28px;
+				margin-bottom: 8px;
+			}
+			b{
+				font-family: $font-interB;
+				color: #000;
+			}
+
+			&:before {
+				content: "●";
+				/* Add content: \2022 is the CSS Code/unicode for a bullet */
+				color: #04004D;
+				/* Change the color */
+				font-weight: bold;
+				/* If you want it to be bold */
+				display: inline-block;
+				/* Needed to add space between the bullet and the text */
+				width: 26px;
+				/* Also needed for space (tweak if needed) */
+				margin-left: -26px;
+				font-size: 15px;
+				line-height: 15px;
+
+				/* Also needed for space (tweak if needed) */
+				// @include upto-tablet {
+				// 	width: 26px;
+				// 	font-size: 10px;
+				// }
+
+				// @include upto-small {
+				// 	font-size: 8px;
+				// 	width: 20px;
+				// }
+				@include upto-desktop{
+					font-size: 14px;
+					line-height: 14px;
+				}
+				@include upto-tablet{
+					font-size: 13px;
+					line-height: 13px;
+				}
+				@include upto-small{
+					font-size: 12px;
+					line-height: 12px;
+					margin-left: -18px;
+					width: 18px;
+				}
+			}
+			ul{
+				li{
+					font-size: 18px;
+					line-height: 26px;
+					@include upto-desktop{
+						font-size: 16px;
+						line-height: 24px;
+					}
+					@include upto-tablet{
+						font-size: 14px;
+					}
+					&:before{
+						font-size: 13px;
+						line-height: 13px;
+						@include upto-desktop{
+							font-size: 12px;
+							line-height: 12px;
+						}
+						@include upto-tablet{
+							font-size: 11px;
+							line-height: 11px;
+						}
+						@include upto-small{
+							font-size: 10px;
+							line-height: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

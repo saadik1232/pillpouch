@@ -1,0 +1,44 @@
+.appoint-info {
+    .info-box {
+      background: #ebfdef;
+      border-radius: 10px;
+      padding: 35px 25px;
+      &.info-box1 {
+        background: #e8eff9;
+      }
+      &.info-box2 {
+        background: #FFEFE7;
+      }
+
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        width: 80%;
+        overflow: hidden;
+
+        h5 {
+          font-size: 14px;
+          line-height: 20px;
+          font-family: $font-poppinsM;
+          letter-spacing: 0.1px;
+          color: #000;
+          margin-bottom: 14px;
+        }
+
+        h3 {
+          font-size: 46px;
+          line-height: 27px;
+          font-family: $font-poppinsSB;
+          letter-spacing: -0.001em;
+          color: #000;
+        }
+      }
+
+      .img-holder {
+        display: inline-block;
+        vertical-align: middle;
+        width: 18%;
+        text-align: right;
+      }
+    }
+  }

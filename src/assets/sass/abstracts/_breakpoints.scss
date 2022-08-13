@@ -1,0 +1,125 @@
+/// Global breakpoint
+
+/// @group Abstracts
+/// @access public
+@mixin breakpoint ($size, $type: 'max') {
+    @media only screen and (#{$type}-width: $size) { @content; }
+}
+
+/// Breakpoint for mobile devices.
+/// ---
+/// @group Abstracts
+/// @access public
+@mixin mobile($orientation: 'all') {
+    @if ($orientation == 'all') {
+        @media only screen and (max-width: 700px) {
+            @content;
+        }
+    } @else if ($orientation == 'portrait') {
+        @media only screen and (max-width: 700px) and (orientation: portrait) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: 700px) and (orientation: landscape) {
+            @content;
+        }
+    }
+}
+
+@mixin no-mobile() {
+    @media only screen and (min-width: 701px) {
+        @content;
+    }
+}
+
+/// Breakpoint for mobile and tablets devices.
+/// ---
+/// @group Abstracts
+/// @access public
+@mixin tablet() {
+    @media only screen and (min-width: 701px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+/// Breakpoint for everything bigger than mobiles
+/// ---
+/// @group Abstracts
+/// @access public
+@mixin laptop() {
+    @media only screen and (min-width: 1024px) and (max-width: 1599px) {
+        @content;
+    }
+}
+
+/// Breakpoint for small desktop.
+/// ---
+/// @group Abstracts
+/// @access public
+@mixin desktop() {
+    @media only screen and (min-width: 1600px) and (max-width: 1919px) {
+        @content;
+    }
+}
+
+/// Breakpoint for small large devices.
+/// ---
+/// @group Abstracts
+/// @access public
+@mixin large() {
+    @media only screen and (min-width: 1920px) {
+        @content;
+    }
+}
+@mixin upto-large() {
+    @media only screen and (max-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin from-desktop() {
+    @media only screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin upto-desktop() {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin from-laptop() {
+    @media only screen and (min-width: 1260px) {
+        @content;
+    }
+}
+
+@mixin from-tablet() {
+    @media only screen and (min-width: 701px) {
+        @content;
+    }
+}
+
+@mixin upto-tablet() {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin upto-laptop() {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin upto-small() {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin upto-x-small() {
+    @media only screen and (max-width: 479px) {
+        @content;
+    }
+}

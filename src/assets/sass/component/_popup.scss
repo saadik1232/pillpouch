@@ -1,0 +1,40 @@
+.otp-modal{
+	.btn-primary{
+		background-color: #ef5e30;
+		color: #fff;
+		border: none;
+	}
+	.timer-main{
+		font-size: 13px;
+		line-height: 18px;
+		display: inline-block;
+		color: #000;
+	}
+	.counter{
+		font-family: $font-poppinsB;
+	}
+	.resend-code{
+		font-size: 13px;
+		line-height: 18px;
+		display: inline-block;
+		color: #ef5e30;
+		display: none;
+		&.active{
+			display: inline-block;
+		}
+	}
+	.thankyou-after-otp{
+		display: none;
+		h2{
+			font-family: $font-poppinsB;
+			font-size: 20px;
+			line-height: 30px;
+			text-transform: uppercase;
+			color: #000;
+		}
+		p{
+			font-size: 13px;
+			line-height: 15px;
+		}
+	}
+}

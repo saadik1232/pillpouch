@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+/*1. Configuration and helpers*/
+
+@import "abstracts/variables", "abstracts/functions", "abstracts/breakpoints",
+  "abstracts/mixins";
+
+/*2. Vendors*/
+
+//@import "bootstrap/bootstrap.scss";
+//@import "bootstrap/dist/css/bootstrap.min.css";
+//@import "~bootstrap/scss/bootstrap";
+
+//@import "bootstrap";
+//@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./bootstrap/bootstrap.scss";
+
+// FontAwesome
+// "/fontawesome/fontawesome",
+@import "./fontawesome/fontawesome.scss", "./fontawesome/solid",
+  "./fontawesome/regular", "./fontawesome/brands";
+
+/*3. Base stuff*/
+
+@import "base/base", "base/fonts", "base/typography";
+
+/*4. Layout-related sections*/
+
+@import "layouts/form", "layouts/header", "layouts/footer";
+/*4. pages*/
+
+@import "component/inner-pages-banners", "component/iframe-responsive",
+  "component/loader", "component/side-bar", "component/popup";
+
+@import "pages/home", "pages/generic-sections", "pages/pricing", "pages/reviews",
+  "pages/services", "pages/document-style", "pages/dashboard",
+  "pages/prescription", "pages/appointment", "pages/patient-db",
+  "pages/how-it-works";
+// sliders
+@import 
+"vendor/slick",
+ "vendor/magnific-popup",
+
+  "vendor/datepicker",
+   "vendor/perfect-scrollbar",
+    "vendor/bootstrap-select",
+  "vendor/mobile-nav";
+
+/*Importing helpers right at the end.*/
+
+@import "base/helpers", "base/grid";
+
+@import "./burger.scss";
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.boo {
+  border: red 2px solid;
+}
+
+.react-datepicker-popper {
+  z-index: 21;
+}
+
+.fast-option {
+  white-space: nowrap;
+  width: 300px;
+  .css-tj5bde-Svg {
+    display: none;
+    fill: currentColor;
+    line-height: 1;
+    stroke: currentColor;
+    stroke-width: 0;
+  }
+}
+
+// remove

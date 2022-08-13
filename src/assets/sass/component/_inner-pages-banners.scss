@@ -1,0 +1,223 @@
+.top-banner{
+	padding:36px 0;
+	background: #A0C3C1;
+	.text-box{
+		padding: 0 60px;
+		@include upto-desktop{
+			padding: 0 40px;
+		}
+		@include upto-tablet{
+			padding: 0;
+		}
+		@include upto-small{
+			margin-bottom: 20px;
+		}
+		h1{
+			font-size: 70px;
+			line-height: 82px;
+			color: #08053E;
+			font-family: $font-poppinsB;
+			margin-bottom: 40px;
+			@include upto-desktop{
+				font-size: 60px;
+				line-height: 72px;
+				margin-bottom: 30px;
+			}
+			@include upto-tablet{
+				font-size: 50px;
+				line-height: 62px;
+				margin-bottom: 10px;
+			}
+			@include upto-small{
+				font-size: 36px;
+				line-height: 48px;
+			}
+		}
+		p{
+			font-size: 18px;
+			line-height: 28px;
+			font-family: $font-poppinsM;
+			letter-spacing: 0.05em;
+			color: #08053E;
+			margin-bottom: 30px;
+			@include upto-tablet{
+				font-size: 16px;
+				line-height: 26px;
+				margin-bottom: 20px;
+			}
+			@include upto-small{
+				font-size: 14px;
+				line-height: 24px;
+				margin-bottom: 10px;
+			}
+		}
+		.btn{
+			background: $green-color;
+			font-size: 18px;
+			line-height: 19px;
+			font-family: $font-poppinsSB;
+			letter-spacing: 0.105em;
+			border-radius: 15px;
+			color: #fff;
+			&:hover{
+	        	-moz-transform: translateY(-6px);
+				-webkit-transform: translateY(-6px);
+				-o-transform: translateY(-6px);
+				-ms-transform: translateY(-6px);
+				transform: translateY(-6px);
+				-webkit-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+	        }
+	        @include upto-tablet{
+	        	font-size: 16px;
+	        	line-height: 17px;
+	        }
+	        @include upto-small{
+				font-size: 14px;
+				line-height: 15px;
+			}
+		}
+	}
+	&.how-it-works-banner{
+		background: #EEFFFC;
+	}
+	&.pricing-banner{
+		background:#D4F2EB;
+		padding: 42px 0 0;
+		@include upto-desktop{
+			padding: 36px 0 0;
+		}
+		.text-box{
+			padding: 0 42px 0 0;
+			@include upto-tablet{
+				padding: 0;
+			}
+			h1{
+				color: #04004D;
+				font-size: 50px;
+				line-height: 70px;
+				margin-bottom: 20px;
+				@include upto-desktop{
+					font-size: 40px;
+					line-height: 60px;
+					margin-bottom: 10px;
+				}
+				@include upto-tablet{
+					font-size: 30px;
+					line-height: 46px;
+					margin-bottom: 5px;
+				}
+				br{
+					@include upto-desktop{
+						display: none;
+					}
+				}
+			}
+			p{
+				color: #1F1F1F;
+				br{
+					@include upto-tablet{
+						display: none;
+					}
+				}
+			}
+		}
+		img{
+			@include upto-desktop{
+				max-height:414px;
+			}
+			@include upto-tablet{
+				max-height:314px;
+			}
+		}
+	}
+	&.services-banner{
+		background:#16BFA5;
+		padding: 42px 0 0;
+		@include upto-desktop{
+			padding: 36px 0 0;
+		}
+		.text-box{
+			padding: 0 42px 0 0;
+			@include upto-tablet{
+				padding: 0;
+			}
+			h1{
+				color: #fff;
+				font-size: 50px;
+				line-height: 70px;
+				margin-bottom: 20px;
+				@include upto-desktop{
+					font-size: 40px;
+					line-height: 60px;
+					margin-bottom: 10px;
+				}
+				@include upto-tablet{
+					font-size: 30px;
+					line-height: 46px;
+					margin-bottom: 5px;
+				}
+				br{
+					@include upto-desktop{
+						display: none;
+					}
+				}
+			}
+			p{
+				color: #fff;
+				br{
+					@include upto-tablet{
+						display: none;
+					}
+				}
+			}
+		}
+		img{
+			@include upto-desktop{
+				max-height:414px;
+			}
+			@include upto-tablet{
+				max-height:314px;
+			}
+		}
+	}
+	&.reviews-banner{
+		background:#EEFFFC;
+		padding: 47px 0;
+		@include upto-desktop{
+			padding: 44px 0;
+		}
+		@include upto-tablet{
+			padding: 42px 0;
+		}
+		.text-box{
+			padding: 0 60px;
+			@include upto-tablet{
+				padding:0;
+			}
+			h1{
+				color: #04004D;
+				font-size: 50px;
+				line-height: 70px;
+				margin-bottom: 15px;
+				@include upto-desktop{
+					font-size: 40px;
+					line-height: 60px;
+					margin-bottom: 10px;
+				}
+				@include upto-tablet{
+					font-size: 30px;
+					line-height: 46px;
+					margin-bottom: 5px;
+				}
+			}
+			p{
+				color: #1F1F1F;
+			}
+		}
+
+	}
+}

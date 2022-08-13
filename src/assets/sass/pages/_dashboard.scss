@@ -1,0 +1,36 @@
+
+.onboard-header {
+	padding: 28px 51px;
+
+	@include upto-desktop {
+		padding: 14px 30px;
+	}
+
+	@include upto-tablet {
+		padding: 10px 20px;
+	}
+
+	@include upto-small {
+		padding: 8px 15px;
+	}
+
+	.logo {
+		display: inline-block;
+
+		@include upto-desktop {
+			max-width: 150px;
+		}
+
+		@include upto-tablet {
+			max-width: 120px;
+		}
+
+		@include upto-small {
+			max-width: 110px;
+		}
+	}
+}
+
+
+// Import dashboard single files
+@import 'signup', 'patient-add', 'calendar-dashboard', 'dashboard-main';

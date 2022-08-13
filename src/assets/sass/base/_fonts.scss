@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url($font-location + "/Poppins-Regular.otf?#iefix")
+      format("embedded-opentype"),
+    url($font-location + "/poppins-regular-webfont.woff") format("woff");
+  // url($font-location +'/KaushanScript-Regular.ttf')  format('truetype'),
+  // url($font-location +'/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url($font-location + "/Poppins-Medium.otf?#iefix")
+      format("embedded-opentype"),
+    url($font-location + "/poppins-medium-webfont.woff") format("woff");
+  // url($font-location +'/KaushanScript-Regular.ttf')  format('truetype'),
+  // url($font-location +'/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url($font-location + "/Poppins-Bold.otf?#iefix")
+      format("embedded-opentype"),
+    url($font-location + "/poppins-bold-webfont.woff") format("woff");
+  // url($font-location +'/KaushanScript-Regular.ttf')  format('truetype'),
+  // url($font-location +'/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url($font-location + "/Poppins-Light.otf?#iefix")
+      format("embedded-opentype"),
+    url($font-location + "/poppins-light-webfont.woff") format("woff");
+  // url($font-location +'/KaushanScript-Regular.ttf')  format('truetype'),
+  // url($font-location +'/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url($font-location + "/Poppins-SemiBold.otf?#iefix")
+      format("embedded-opentype"),
+    url($font-location + "/poppins-semibold-webfont.woff") format("woff");
+  // url($font-location +'/KaushanScript-Regular.ttf')  format('truetype'),
+  // url($font-location +'/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Regular"),
+    url($font-location + "/Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter Light BETA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Light BETA"),
+    url($font-location + "/Inter-Light-BETA.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Medium"),
+    url($font-location + "/Inter-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Semi Bold"),
+    url($font-location + "/Inter-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Bold"),
+    url($font-location + "/Inter-Bold.woff") format("woff");
+}
+// @font-face {
+//     font-family: 'Inter Extra Bold';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: local('Inter Extra Bold'), url($font-location +'/Inter-ExtraBold.woff') format('woff');
+//     }
+@font-face {
+  font-family: "Inter Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Black"),
+    url($font-location + "/Inter-Black.woff") format("woff");
+}

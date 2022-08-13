@@ -1,0 +1,364 @@
+.signup {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 60px;
+		content: "";
+		display: block;
+		width: 284px;
+		height: 378px;
+		background: url($assets-location +"images/signup-bg.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+		z-index: -1;
+
+		@include upto-desktop {
+			width: 200px;
+			height: 270px;
+		}
+
+		@include upto-tablet {
+			width: 100px;
+			height: 130px;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		right: 0;
+		bottom: 100px;
+		content: "";
+		display: block;
+		width: 320px;
+		height: 378px;
+		background: url($assets-location +"images/signup-bg-1.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+		z-index: -1;
+
+		@include upto-desktop {
+			width: 210px;
+			height: 270px;
+		}
+
+		@include upto-tablet {
+			width: 90px;
+			height: 120px;
+		}
+
+		@include upto-small {
+			display: none;
+		}
+	}
+
+	.section-head {
+		h2{
+			font-family: $font-poppinsSB;
+			font-size: 48px;
+			line-height: 60px;
+			@include upto-desktop{
+		        font-size: 40px;
+		        line-height: 52px;
+		    }
+		     @include upto-tablet{
+		        font-size: 34px;
+		        line-height: 50px;
+		    }
+		     @include upto-small{
+		        font-size: 28px;
+		        line-height: 40px;
+		    }
+		}
+		h4 {
+			font-size: 24px;
+			line-height: 36px;
+			font-family: $font-poppinsM;
+			@include upto-desktop {
+				font-size: 20px;
+				line-height: 30px;
+			}
+
+			@include upto-tablet {
+				font-size: 18px;
+				line-height: 28px;
+			}
+
+			@include upto-small {
+				font-size: 16px;
+				line-height: 26px;
+			}
+
+			a {
+				color: $green-color;
+
+				&:hover {
+					color: $green-color;
+				}
+			}
+		}
+	}
+
+	.form-holder {
+		padding: 0 8px;
+
+		@include upto-tablet {
+			padding: 0;
+		}
+
+		hr {
+			border-top: 2px solid rgba(0, 0, 0, 0.19);
+			margin: 60px 0 40px;
+
+			@include upto-desktop {
+				margin: 40px 0 30px;
+			}
+
+			@include upto-tablet {
+				margin: 20px 0;
+			}
+		}
+
+		.other-signup {
+			a {
+				display: inline-block;
+				width: 49%;
+				font-size: 21px;
+				line-height: 31px;
+				font-family: $font-poppinsR;
+				color: #3B5998;
+				text-transform: capitalize;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				@include upto-desktop {
+					font-size: 16px;
+					line-height: 26px;
+				}
+
+				@include upto-tablet {
+					font-size: 14px;
+					line-height: 24px;
+				}
+
+				@include upto-small {
+					font-size: 11px;
+					line-height: 24px;
+				}
+
+				i {
+					margin-right: 10px;
+
+					@include upto-tablet {
+						margin-right: 5px;
+					}
+				}
+
+				&.google-ic {
+					color: #4285F4;
+					padding-right: 0;
+					position: relative;
+
+					&:after {
+						width: 2px;
+						height: 20px;
+						background: rgba(0, 0, 0, 0.19);
+						content: "";
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 5px;
+
+						@include upto-small {
+							height: 14px;
+						}
+					}
+
+					img {
+						max-width: 30px;
+						vertical-align: top;
+						margin-right: 5px;
+
+						@include upto-tablet {
+							max-width: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.bottom-terms {
+		margin: 80px 0 40px;
+
+		@include upto-desktop {
+			margin: 40px 0 20px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 35px;
+			font-family: $font-poppinsM;
+			text-align: center;
+			text-transform: capitalize;
+			color: #201236;
+
+			@include upto-desktop {
+				font-size: 17px;
+				line-height: 32px;
+			}
+
+			@include upto-tablet {
+				font-size: 16px;
+				line-height: 28px;
+			}
+
+			@include upto-small {
+				font-size: 14px;
+				line-height: 26px;
+			}
+
+			a {
+				color: $green-color;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.body-bg {
+	background:#EDF9F6 url($assets-location +"images/white-bg.png");
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-size: 100%;
+}
+
+.welcome-screen {
+	padding: 45px 0 230px;
+	position: relative;
+	@include upto-desktop{
+		padding:40px 0 400px;
+	}
+	@include upto-tablet{
+		padding: 40px 0 200px;
+	}
+	@include upto-small{
+		padding: 30px 0 70px;
+	}
+	&:after {
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+		content: "";
+		display: block;
+		width: 700px;
+		height: 700px;
+		background: url($assets-location +"images/patient-banner.png");
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+		background-size: contain;
+		@include upto-desktop{
+			width: 600px;
+			height: 600px;
+		}
+		@include upto-tablet{
+			width: 450px;
+			height: 450px;
+		}
+		@include upto-small{
+			display: none;
+		}
+	}
+	.text-box{
+		h4{
+			font-size: 27px;
+			line-height: 31px;
+			color: $green-color;
+			font-family: $font-poppinsM;
+			margin-bottom: 13px;
+			@include upto-desktop{
+				font-size: 22px;
+				line-height: 28px;
+				margin-bottom: 8px;
+			}
+			@include upto-tablet{
+				font-size: 18px;
+				line-height: 26px;
+				margin-bottom: 5px;
+			}
+			@include upto-small{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		h1{
+			font-size: 60px;
+			line-height: 85px;
+			font-family: $font-poppinsB;
+			color: #000000;
+			@include upto-desktop{
+				font-size: 50px;
+				line-height: 70px;
+			}
+			@include upto-tablet{
+				font-size: 40px;
+				line-height: 54px;
+			}
+			@include upto-small{
+				font-size: 32px;
+				line-height: 42px;
+			}
+		}
+		h3{
+			font-size: 30px;
+			line-height: 35px;
+			color: #000000;
+			font-family: $font-poppinsM;
+			margin-bottom: 30px;
+			@include upto-desktop{
+				font-size: 26px;
+				line-height: 32px;
+				margin-bottom: 25px;
+			}
+			@include upto-tablet{
+				font-size: 21px;
+				line-height: 28px;
+				margin-bottom: 20px;
+			}
+			@include upto-small{
+				font-size: 18px;
+				line-height:24px;
+				margin-bottom: 15px;
+			}
+		}
+		.btn-next{
+			background: $green-color;
+			border-radius: 100px;
+			color: #fff;	
+			padding: 8px 50px;
+			font-size: 18px;
+			line-height: 26px;
+			border:2px solid transparent;
+			font-family: $font-poppinsM;
+			&:hover{
+				color: $green-color;
+				border: 2px solid $green-color;
+				background: transparent;
+			}
+			@include upto-tablet{
+				font-size: 16px;
+				line-height: 24px;
+				padding: 6px 45px;
+			}
+			@include upto-small {
+				padding: 5px 25px;
+				font-size: 14px;
+			}
+		}
+	}
+}

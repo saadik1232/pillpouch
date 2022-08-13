@@ -1,0 +1,281 @@
+.dashboard-calendar{
+    margin-bottom: 30px;
+    .fc-toolbar-chunk{
+        >.fc-button{
+            margin: 0;
+            border-radius: 0;
+            font-size: 16px;
+            background: #F4F4F5;
+            border: 0;
+            color:#000;
+            text-transform: capitalize;
+            &:hover{
+                background: $green-color;
+                color: #fff;
+            }
+            &:focus{
+                box-shadow: none !important;
+                outline: none;
+            }
+            &:focus-visible{
+                box-shadow: none !important;
+                outline: none;
+            }
+            &:active{
+                background: $green-color;
+                box-shadow: none !important;
+            }
+            .fc-icon{
+                font-size: 20px;
+            }
+            &.fc-today-button{
+                margin: 0 1px;
+            }
+            &.fc-next-button{
+                border-radius: 0px 6px 6px 0px;
+            }
+            &.fc-prev-button{
+                border-radius: 6px 0px 0px 6px;
+            }
+            &.fc-custom1active-button,
+            &.fc-custom2active-button,
+            &.fc-custom3active-button{
+                background: $green-color;
+                color: #fff;
+                margin: 0 5px 0 0;
+                border-radius: 38px;
+                font-size: 16px;
+                padding: 4px 16px;
+                border: 0;
+                text-transform: capitalize;
+            }
+            &.fc-custom1-button,
+            &.fc-custom2-button,
+            &.fc-custom3-button{
+                margin: 0 5px 0 0;
+                border-radius: 38px;
+                font-size: 16px;
+                background: transparent;
+                padding: 4px 16px;
+                border: 0;
+                color:#000;
+                text-transform: capitalize;
+                &:hover{
+                    background: $green-color;
+                    color: #fff;
+                }
+                &:focus{
+                    box-shadow: none !important;
+                    outline: none;
+                }
+                &:focus-visible{
+                    box-shadow: none !important;
+                    outline: none;
+                }
+                &:active{
+                    background: $green-color;
+                    box-shadow: none !important;
+                }
+            }
+        }
+        .fc-toolbar-title{
+            font-weight: bold;
+            font-size: 26px;
+        }
+        .fc-button-group{
+            .fc-button{
+                margin: 0 5px 0 0;
+                border-radius: 38px;
+                font-size: 16px;
+                background: transparent;
+                padding: 4px 16px;
+                border: 0;
+                color:#000;
+                text-transform: capitalize;
+                &.fc-button-active,
+                &:hover{
+                    background: $green-color;
+                    color: #fff;
+                }
+                &:focus{
+                    box-shadow: none !important;
+                    outline: none;
+                }
+                &:focus-visible{
+                    box-shadow: none !important;
+                    outline: none;
+                }
+                &:active{
+                    background: $green-color;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+    .fc{
+        .fc-more-link{
+            font-size: 12px;
+        }
+        .fc-view{
+            &.fc-dayGridMonth-view{
+                .fc-scrollgrid-section-header{
+                    .fc-col-header {
+                        .fc-col-header-cell{
+
+                        }
+                    }
+                }
+            }
+            .fc-timegrid-axis-cushion{
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+            .fc-timegrid-slot-label-cushion{
+                font-size: 14px;
+            }
+            .fc-direction-ltr{
+                .fc-timegrid-slot-label-frame{
+                    text-align: center;
+                }
+            }
+            .fc-timegrid-event{
+                .fc-event-main{
+                    padding: 6px;
+                }
+            }
+        }
+        .fc-more-popover{
+            border: 0;
+            .fc-popover-header {
+                background: #25C7AE;
+                color: #fff;
+                font-size: 14px;
+            }
+            .fc-popover-body{
+                text-transform: capitalize;
+                font-size: 14px;
+                .fc-daygrid-block-event{
+                    background: transparent;
+                    border: 0;
+                    .fc-event-main{
+                        color: #000;
+                        .fc-event-time{
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        .fc-daygrid-day-events{
+            .fc-daygrid-event{
+                background: rgba(14, 165, 233, 0.1);
+                position: relative;
+                font-size: 12px;
+                border: 0;
+                border-left: 4px solid #0EA5E9;
+                padding: 4px 10px;
+                text-transform: capitalize;
+                color: #0369A1;
+
+                .fc-daygrid-event-dot{
+                    display: none;
+                }
+                .fc-event-title{
+                    font-size: 12px;
+                }
+                // &:nth-child(2n+1){
+                // border-left: 4px solid #25C7AE;
+                // background: #E8F8F3;
+                //     .fc-event-main{
+                //         color: #25C7AE;
+                //     }
+                // }
+                &.Visited{
+                    background: rgba(16, 185, 129, 0.1);
+                    color: #25C7AE;
+                    border-color: #25C7AE;
+                }
+                &.Rejected{
+                    background: #FFE4E6;
+                    color: #F43F5E;
+                    border-color: #F43F5E;
+                }
+            }
+        }
+        
+        .fc-h-event{
+            // background: rgba(14, 165, 233, 0.1);
+            // position: relative;
+            // border: 0;
+            // border-left: 4px solid #0EA5E9;
+            // padding: 4px 10px;
+            
+            .fc-event-main{
+                // text-transform: capitalize;
+                color: #0369A1;
+                .fc-event-title{
+                    font-weight: 600;
+                }
+            }
+        }
+        .fc-dayGridMonth-view{
+            table{
+                tr{
+                    &:nth-child(even){
+                        background: #F3F9F7;
+                    }
+                }
+            }
+        }
+        .fc-scrollgrid{
+            border: 0;
+        }
+        .fc-timegrid-divider{
+            padding: 0;
+        }
+        .fc-timeGridWeek-view{
+            .fc-theme-standard td, 
+            .fc-theme-standard th{
+                &:first-child{
+                    border-left: 0;
+                }
+            }
+            .fc-timegrid-event{
+                // background: rgba(14, 165, 233, 0.3);
+                background: #25c7ae;
+                font-size: 12px;
+                border: 0;
+                border-left: 4px solid #0ee9b6;
+                text-transform: capitalize;
+                .fc-event-main{
+                    color: #fff;
+                    padding: 0 3px;
+                    font-size: 12px;
+                }
+            }
+        }
+        // .fc-timegrid-col{
+        //     &.fc-day-today{
+        //         background: #E8F8F3;
+        //     }
+        // }
+        .fc-timeGridDay-view{
+            .fc-timegrid-event{
+                background: rgba(14, 165, 233, 0.4);
+                border: 0;
+                border-left: 4px solid #0EA5E9;
+                text-transform: capitalize;
+                .fc-event-main{
+                    color: #0369A1;
+                    padding: 0 3px;
+                }
+            }
+        }
+        // .fc-daygrid-day{
+        //     &.fc-day-today{
+        //         background: #E8F8F3;
+        //     }
+        // }
+        
+    }
+}

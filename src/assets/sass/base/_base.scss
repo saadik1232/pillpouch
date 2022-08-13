@@ -1,0 +1,29 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, html{
+	font-family:$font-poppinsR;
+}
+body{
+    min-height: 100%;
+}
+#wrapper{
+    // overflow: hidden;
+    // min-height: 100vh;
+}
+
+
+.container{
+    max-width: 1300px;
+}
+
+@include upto-tablet () {
+  
+}

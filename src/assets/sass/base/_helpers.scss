@@ -1,0 +1,251 @@
+/**
+ * Clear inner floats
+ */
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/**
+ * Clear pre floats
+ */
+.clear {
+    clear: both;
+}
+
+/**
+ * Hide element
+ */
+.hide {
+    display: none;
+
+    @include mobile() {
+        &\:mobile,
+        &--on-mobile {
+            display: none;
+        }
+    }
+
+    @include mobile('landscape') {
+        &\:mobile-landscape,
+        &--on-landscape {
+            display: none;
+        }
+    }
+
+    @include tablet() {
+        &\:tablet,
+        &--on-tablet { display: none; }
+    }
+
+    @include laptop() {
+        &\:laptop,
+        &--on-laptop { display: none; }
+    }
+
+    @include desktop() {
+        &\:desktop,
+        &--on-desktop { display: none; }
+    }
+
+    @include large() {
+        &\:large,
+        &--on-large { display: none; }
+    }
+
+    @include upto-tablet() {
+        &\:upto-tablet {
+            display: none;
+        }
+    }
+
+    @include upto-laptop() {
+        &\:upto-laptop {
+            display: none;
+        }
+    }
+
+    @include from-laptop() {
+        &\:from-laptop {
+            display: none;
+        }
+    }
+}
+
+/**
+ * Display elements
+ */
+.show {
+    &\:landscape,
+    &\:tablet,
+    &\:mobile,
+    &\:laptop,
+    &\:desktop,
+    &\:upto-tablet
+    &\:large {
+        display: none;
+    }
+
+    @include upto-tablet() {
+        &\:upto-tablet {
+            display: block;
+        }
+    }
+
+    &\:upto-laptop {
+        display: none;
+    }
+
+    @include upto-laptop() {
+        &\:upto-laptop {
+            display: block;
+        }
+    }
+
+    &\:from-laptop {
+        display: none;
+    }
+
+    @include from-laptop() {
+        &\:from-laptop {
+            display: block;
+        }
+    }
+
+    @include tablet() {
+        &\:tablet {
+            display: block;
+        }
+    }
+
+    @include laptop() {
+        &\:laptop {
+            display: block;
+        }
+    }
+
+    @include desktop() {
+        &\:desktop {
+            display: block;
+        }
+    }
+
+    @include large() {
+        &\:large {
+            display: block;
+        }
+    }
+
+    @include mobile('landscape') {
+        &\:landscape {
+            display: block;
+        }
+    }
+
+    @include mobile() {
+        &\:mobile {
+            display: block;
+        }
+
+        &\:desktop {
+            display: none;
+        }
+    }
+}
+
+/**
+ * Alignment
+ */
+.align {
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-center\:mobile {
+        text-align: center;
+
+        @include tablet() {
+            text-align: inherit;
+        }
+    }
+}
+
+/**
+ * Background positions
+ */
+.bg {
+    &-center-right {
+        background-position: center right;
+    }
+
+    &-center-left {
+        background-position: center left;
+    }
+
+    &-center-center {
+        background-position: center center;
+    }
+
+    &-top-center {
+        background-position: top center;
+    }
+
+    &-bottom-center {
+        background-position: bottom center;
+    }
+
+    &-top-right {
+        background-position: top right;
+    }
+
+    &-top-left {
+        background-position: top left;
+    }
+
+    &-bottom-right {
+        background-position: bottom right;
+    }
+
+    &-bottom-left {
+        background-position: bottom left;
+    }
+
+    &-bottom-right {
+        background-position: bottom right;
+    }
+}
+
+/**
+ * Min heights
+ */
+@include from-tablet() {
+    @for $i from 1 through 49 {
+        $val: ($i * 25) + 75;
+        .min-height-#{$val}\:from-tablet {
+            min-height: #{$val}px;
+        }
+    }
+}
+
+@include mobile() {
+    @for $i from 1 through 49 {
+        $val: ($i * 25) + 75;
+        .min-height-#{$val}\:mobile {
+            min-height: #{$val}px;
+        }
+    }
+}
+.no-marg{
+    margin:0 !important;
+}

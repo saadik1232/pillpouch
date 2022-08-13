@@ -1,0 +1,1515 @@
+.add-patient-db {
+  background: #ffffff;
+  padding: 66px;
+  // box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+  border-radius: 8px;
+  @include upto-desktop {
+    padding: 40px;
+  }
+  @include upto-tablet {
+    padding: 30px;
+  }
+  .disease-title {
+    padding-left: 12px;
+    @include upto-laptop {
+      padding: 0;
+    }
+  }
+  .dropselect {
+    .css-1s2u09g-control {
+      background: #ffffff;
+      border: 1px solid #cecece;
+      box-sizing: border-box;
+      border-radius: 7px;
+      padding: 0 0 0 35px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $font-poppinsM;
+      color: #000;
+      &:focus {
+        border: 1px solid #25c7ae;
+        box-shadow: 0px 2px 10px rgba(118, 243, 225, 0.39);
+      }
+      .css-319lph-ValueContainer {
+        padding-left: 0;
+      }
+      .css-14el2xx-placeholder {
+        color: #000;
+      }
+      .css-g1d714-ValueContainer {
+        padding-left: 0;
+      }
+    }
+    .css-1pahdxg-control {
+      background: #ffffff;
+      border: 1px solid #cecece;
+      box-sizing: border-box;
+      border-radius: 7px;
+      padding: 0 0 0 35px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $font-poppinsM;
+      border: 1px solid #25c7ae;
+      box-shadow: 0px 2px 10px rgba(118, 243, 225, 0.39);
+      &:focus {
+        border: 1px solid #25c7ae;
+        box-shadow: 0px 2px 10px rgba(118, 243, 225, 0.39);
+      }
+      .css-g1d714-ValueContainer {
+        padding-left: 0;
+      }
+    }
+  }
+  .main-title {
+    color: #414d55;
+    margin-bottom: 40px;
+  }
+
+  .form-group {
+    .add-meds {
+      color: $green-color;
+      text-decoration: underline;
+      font-family: $font-poppinsSB;
+      font-size: 18px;
+      line-height: 26px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .btn-holder {
+    .btn-add {
+      background: $green-color;
+      padding: 12px 40px;
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 100px;
+      margin-right: 15px;
+      font-family: $font-poppinsM;
+
+      &:hover {
+        text-decoration: none;
+        color: $green-color;
+        background: $light-green;
+      }
+    }
+    
+
+    .btn-cancel {
+      font-size: 18px;
+      display: inline-block;
+      color: #a1a1a1;
+      font-family: $font-poppinsM;
+
+      &:hover {
+        text-decoration: none;
+        color: $green-color;
+      }
+    }
+  }
+
+  .prescription-table {
+    tr {
+      th {
+        font-size: 12px;
+        line-height: 16px;
+        border: 0;
+        vertical-align: middle;
+      }
+
+      td {
+        padding: 6px 12px;
+        border: 0;
+        vertical-align: middle;
+        text-align: center;
+
+        .custom-select {
+          border: 0.750521px solid #cecece;
+          border-radius: 5.25365px;
+          height: 42px;
+          padding: 0 12px;
+          min-width: 200px;
+          &:focus {
+            border: 0.750521px solid $green-color;
+            box-shadow: 0px 1.50104px 3.7526px rgba(176, 176, 176, 0.3);
+          }
+        }
+
+        .form-control {
+          background: #ffffff;
+          border: 0.750521px solid #cecece;
+          box-shadow: 0px 1.50104px 3.7526px rgba(176, 176, 176, 0.3);
+          border-radius: 5.25365px;
+          height: 42px;
+          padding: 0 12px;
+        }
+
+        .check-main {
+          white-space: nowrap;
+
+          .check-holder {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+
+        .number-input {
+          max-width: 85px;
+          border: 0.750521px solid $green-color;
+          box-shadow: 0px 1.50104px 3.7526px rgba(111, 196, 234, 0.3);
+        }
+
+        .bootstrap-select.custom-select {
+          // width: 100% !important;
+          padding: 0;
+          border: 0;
+
+          > .dropdown-toggle {
+            border: 0.750521px solid #cecece;
+            box-shadow: 0px 1.50104px 3.7526px rgba(176, 176, 176, 0.3);
+            border-radius: 5.25365px;
+            height: 42px;
+            padding: 9px 12px;
+            position: relative;
+            width: 100%;
+            text-align: right;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:focus {
+              outline: none !important;
+            }
+          }
+        }
+        .price {
+          display: block;
+          font-size: 13px;
+          line-height: 16px;
+          white-space: nowrap;
+        }
+        .cross-ic {
+          &:hover {
+            color: red;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.patient-listing {
+  .info-box {
+    background: #ebfdef;
+    // box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    border-radius: 10px;
+    padding: 36px 35px 25px 25px;
+    @include upto-tablet {
+      margin-bottom: 15px;
+    }
+
+    &.info-box1 {
+      background: #e8eff9;
+    }
+
+    &.last-info {
+      background: #ffefe7;
+    }
+
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      width: 80%;
+      overflow: hidden;
+
+      h5 {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $font-poppinsM;
+        letter-spacing: 0.1px;
+        color: #08053e;
+        margin-bottom: 14px;
+      }
+
+      h3 {
+        font-size: 46px;
+        line-height: 27px;
+        font-family: $font-poppinsSB;
+        letter-spacing: -0.001em;
+        color: #08053e;
+        @include upto-tablet {
+          font-size: 34px;
+        }
+      }
+    }
+
+    .img-holder {
+      display: inline-block;
+      vertical-align: middle;
+      width: 18%;
+      text-align: right;
+    }
+
+    .btn-holder {
+      text-align: right;
+      display: block;
+      padding: 25px 20px 5px 0;
+
+      a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 16px;
+        display: inline-block;
+      }
+    }
+
+    .percentage-holder {
+      span {
+        display: inline-block;
+
+        &.percentage {
+          padding: 7px 10px;
+          font-size: 12px;
+          color: #9ad1a7;
+          background: #fff;
+          font-family: $font-poppinsB;
+          @include radius(20px);
+        }
+
+        &.chart-holder {
+          float: right;
+        }
+      }
+
+      &.info-2 {
+        .percentage {
+          color: #b8c7e3;
+          background: #fff;
+        }
+      }
+
+      &.info-3 {
+        .percentage {
+          color: #ff9e6d;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .patients-info {
+    background: #ffffff;
+    // box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    // border-radius: 10px;
+    border: 0.750521px solid #efefef;
+    border-radius: 6.00417px;
+    padding: 36px 35px 25px 25px;
+
+    .sort-right {
+      select {
+        width: auto;
+        border: 1.12656px solid #e1e1e1;
+        border-radius: 6.00833px;
+        font-size: 13.5117px;
+        line-height: 20px;
+        text-transform: capitalize;
+        padding: 0 20px;
+        background-position: 94% 50%;
+        color: #949494;
+        min-width: 120px;
+        height: 46px;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      label {
+        font-size: 12.0167px;
+        line-height: 12px;
+        color: #414d55;
+        margin-right: 10px;
+        font-weight: 500;
+      }
+    }
+
+    .btn-del {
+      background: #f1f9f7;
+      color: $green-color;
+
+      &:hover {
+        color: #fff;
+        background: $green-color;
+      }
+    }
+
+    #table-holder {
+      @include upto-desktop {
+        overflow-x: scroll;
+      }
+      .dataTables_wrapper {
+        .dataTables_paginate {
+          float: none;
+
+          .paginate_button {
+            padding: 0;
+
+            &.page-item {
+              &:hover {
+                background: transparent;
+                border: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .table {
+        border: 0;
+
+        tr {
+          .check-holder {
+            .checkmark {
+              left: 0;
+              right: auto;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          th {
+            padding: 20px 15px;
+            font-size: 16px;
+            line-height: 16px;
+            font-family: $font-poppinsM;
+            color: #414d55;
+            border: 0;
+            background: #f5f5f5;
+            min-width: auto;
+            box-sizing: content-box;
+            white-space: nowrap;
+            @include upto-desktop {
+              font-size: 14px;
+              line-height: 14px;
+              padding: 16px 12px;
+            }
+            .ordericon {
+              margin-left: 5px;
+              vertical-align: top;
+            }
+          }
+
+          td {
+            padding: 30px 15px;
+            border: none;
+            border-bottom: 1px dashed #a2c0d4;
+            font-size: 14px;
+            line-height: 14px;
+            font-family: $font-poppinsR;
+            white-space: nowrap;
+            color: #949494;
+            @include upto-desktop {
+              font-size: 14px;
+              line-height: 14px;
+              padding: 24px 12px;
+            }
+            &.boldname,
+            .name-div {
+              font-size: 16px;
+              cursor: pointer;
+              font-family: $font-poppinsM;
+              color: #414d55;
+              @include upto-desktop {
+                font-size: 14px;
+                line-height: 14px;
+              }
+            }
+
+            &:last-child {
+              padding-top: 25px;
+              text-align: right;
+            }
+            &.demo-row-accepted {
+              color: #5d90f3;
+              font-weight: 500;
+            }
+            &.demo-row-rejected {
+              color: #fc6b58;
+              font-weight: 500;
+            }
+            &.demo-row {
+              color: $green-color;
+              font-weight: 500;
+            }
+            &.boldname {
+              color: #000;
+            }
+            .detail-btn {
+              color: $green-color;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 12px;
+              -webkit-appearance: none;
+              background: transparent;
+              border: 1px solid $green-color;
+              border-radius: 56.01px;
+              padding: 8px 14px;
+              &:focus {
+                outline: none;
+              }
+              &:hover {
+                cursor: pointer;
+                background: $green-color;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .btn-group {
+          .dropdown-toggle {
+            width: auto;
+            height: auto;
+            background: transparent;
+            border: none;
+            padding: 0 2px;
+            color: #949494;
+
+            &:before {
+              display: none;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+
+      .view-pager {
+        .dataTables_paginate {
+          display: inline-block;
+          vertical-align: middle;
+
+          .pagination {
+            margin: 0;
+          }
+
+          .paginate_button {
+            margin-right: 4px;
+
+            .page-link {
+              background: #ffffff;
+              border: 1px solid #e8e8e8;
+              box-sizing: border-box;
+              border-radius: 4px;
+              color: #a9a9a9;
+              height: 32px;
+              width: 32px;
+
+              &:before {
+                display: none;
+              }
+
+              &:after {
+                display: none;
+              }
+
+              &:hover {
+                color: #000;
+              }
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              i {
+                font-size: 16px;
+                vertical-align: top;
+                color: #52575c;
+              }
+            }
+
+            display: none;
+
+            &.active {
+              display: inline-block;
+
+              .page-link {
+                background: $green-color;
+                border: 1px solid $green-color;
+                font-size: 16px;
+                line-height: 22px;
+                color: #fff;
+                padding-top: 6px;
+              }
+            }
+
+            &.next {
+              display: inline-block;
+            }
+
+            &.previous {
+              display: inline-block;
+            }
+          }
+        }
+
+        .dataTables_info {
+          margin-left: 16px;
+          display: inline-block;
+          vertical-align: middle;
+          padding-top: 0;
+          font-size: 14px;
+          line-height: 22px;
+          color: #25282b;
+        }
+      }
+      .react-bootstrap-table-pagination {
+        .dropdown-toggle {
+          width: auto;
+          height: 40px;
+          padding: 0 5px;
+          color: #000;
+          border: 1px solid #e8e8e8;
+          font-size: 16px;
+          line-height: 16px;
+          &:focus {
+            box-shadow: none;
+            background: $green-color;
+            color: #fff;
+          }
+        }
+      }
+      &.prescriptiontable {
+        .table {
+          tr {
+            td {
+              vertical-align: middle;
+              &:last-child {
+                text-align: left;
+              }
+              .selectouter {
+                display: inline-block;
+                border: 1px solid #efefef;
+                border-radius: 1px;
+                padding: 2px 3px;
+                select {
+                  border: 0;
+                  color: #949494;
+                  background: transparent;
+                }
+              }
+              span {
+                font-weight: bold;
+                // font-size: 12px;
+                line-height: 15px;
+                padding: 6px 12px;
+                display: inline-block;
+                color: #ffb800;
+                background: #fffaed;
+                border-radius: 8px;
+                text-align: center;
+                width: 100%;
+                max-width: 120px;
+                &.Placed {
+                }
+                &.Delivered {
+                  color: #0e93d2;
+                  background: #e6f3fb;
+                }
+                &.Cancelled {
+                  color: #fc6b58;
+                  background: #fff2f0;
+                }
+                &.Accepted {
+                  color: #25c7ae;
+                  background: #f1f9f7;
+                }
+              }
+              .setbtn {
+                color: #fff;
+                background: $green-color;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 12px;
+                -webkit-appearance: none;
+                border: 1px solid $green-color;
+                border-radius: 6px;
+                padding: 6px 5px;
+                &:focus {
+                  box-shadow: none;
+                  outline: none;
+                }
+                &:hover {
+                  cursor: pointer;
+                  background: $green-color;
+                  color: #fff;
+                }
+              }
+              &.Accepted {
+              }
+            }
+          }
+        }
+      }
+      &.roletable {
+        .btn-holder {
+          .edit-btn {
+            padding: 0 5px;
+            display: inline-block;
+            color: #949494;
+            &:hover {
+              cursor: pointer;
+              i {
+                color: $green-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .table-holder {
+      @include upto-desktop {
+        overflow-x: scroll;
+      }
+      .dataTables_wrapper {
+        .dataTables_paginate {
+          float: none;
+
+          .paginate_button {
+            padding: 0;
+
+            &.page-item {
+              &:hover {
+                background: transparent;
+                border: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .table {
+        border: 0;
+
+        tr {
+          .check-holder {
+            .checkmark {
+              left: 0;
+              right: auto;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          th {
+            padding: 20px 15px;
+            font-size: 16px;
+            line-height: 16px;
+            font-family: $font-poppinsM;
+            color: #414d55;
+            border: 0;
+            background: #f5f5f5;
+            min-width: auto;
+            box-sizing: content-box;
+            white-space: nowrap;
+            @include upto-desktop {
+              font-size: 14px;
+              line-height: 14px;
+              padding: 16px 12px;
+            }
+            &:last-child {
+              text-align: center;
+            }
+            .ordericon {
+              margin-left: 5px;
+              vertical-align: top;
+            }
+          }
+
+          td {
+            padding: 30px 15px;
+            border: none;
+            border-bottom: 1px dashed #a2c0d4;
+            font-size: 14px;
+            line-height: 14px;
+            font-family: $font-poppinsR;
+            white-space: nowrap;
+            color: #949494;
+            @include upto-desktop {
+              font-size: 14px;
+              line-height: 14px;
+              padding: 24px 12px;
+            }
+            &.boldname,
+            .name-div {
+              font-size: 16px;
+              font-family: $font-poppinsM;
+              color: #414d55;
+              @include upto-desktop {
+                font-size: 14px;
+                line-height: 14px;
+              }
+            }
+
+            &:last-child {
+              text-align: center;
+            }
+            &.demo-row-accepted {
+              color: #5d90f3;
+              font-weight: 500;
+            }
+            &.demo-row-rejected {
+              color: #fc6b58;
+              font-weight: 500;
+            }
+            &.demo-row {
+              color: $green-color;
+              font-weight: 500;
+            }
+            &.boldname {
+              color: #000;
+            }
+            .detail-btn {
+              color: $green-color;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 12px;
+              -webkit-appearance: none;
+              background: transparent;
+              border: 1px solid $green-color;
+              border-radius: 56.01px;
+              padding: 8px 14px;
+              &:focus {
+                outline: none;
+              }
+              &:hover {
+                cursor: pointer;
+                background: $green-color;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .btn-group {
+          .dropdown-toggle {
+            width: auto;
+            height: auto;
+            background: transparent;
+            border: none;
+            padding: 0 2px;
+            color: #949494;
+
+            &:before {
+              display: none;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+
+      .view-pager {
+        .dataTables_paginate {
+          display: inline-block;
+          vertical-align: middle;
+
+          .pagination {
+            margin: 0;
+          }
+
+          .paginate_button {
+            margin-right: 4px;
+
+            .page-link {
+              background: #ffffff;
+              border: 1px solid #e8e8e8;
+              box-sizing: border-box;
+              border-radius: 4px;
+              color: #a9a9a9;
+              height: 32px;
+              width: 32px;
+
+              &:before {
+                display: none;
+              }
+
+              &:after {
+                display: none;
+              }
+
+              &:hover {
+                color: #000;
+              }
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              i {
+                font-size: 16px;
+                vertical-align: top;
+                color: #52575c;
+              }
+            }
+
+            display: none;
+
+            &.active {
+              display: inline-block;
+
+              .page-link {
+                background: $green-color;
+                border: 1px solid $green-color;
+                font-size: 16px;
+                line-height: 22px;
+                color: #fff;
+                padding-top: 6px;
+              }
+            }
+
+            &.next {
+              display: inline-block;
+            }
+
+            &.previous {
+              display: inline-block;
+            }
+          }
+        }
+
+        .dataTables_info {
+          margin-left: 16px;
+          display: inline-block;
+          vertical-align: middle;
+          padding-top: 0;
+          font-size: 14px;
+          line-height: 22px;
+          color: #25282b;
+        }
+      }
+      .react-bootstrap-table-pagination {
+        .dropdown-toggle {
+          width: auto;
+          height: 40px;
+          padding: 0 5px;
+          color: #000;
+          border: 1px solid #e8e8e8;
+          font-size: 16px;
+          line-height: 16px;
+          &:focus {
+            box-shadow: none;
+            background: $green-color;
+            color: #fff;
+          }
+        }
+      }
+      &.prescriptiontable {
+        .table {
+          tr {
+            td {
+              vertical-align: middle;
+              &:last-child {
+                text-align: left;
+              }
+              .selectouter {
+                display: inline-block;
+                border: 1px solid #efefef;
+                border-radius: 1px;
+                padding: 2px 3px;
+                select {
+                  border: 0;
+                  color: #949494;
+                  background: transparent;
+                }
+              }
+              span {
+                font-weight: bold;
+                // font-size: 12px;
+                line-height: 15px;
+                padding: 6px 12px;
+                display: inline-block;
+                color: #ffb800;
+                background: #fffaed;
+                border-radius: 8px;
+                text-align: center;
+                width: 100%;
+                max-width: 120px;
+                &.Placed {
+                }
+                &.Delivered {
+                  color: #0e93d2;
+                  background: #e6f3fb;
+                }
+                &.Cancelled {
+                  color: #fc6b58;
+                  background: #fff2f0;
+                }
+                &.Accepted {
+                  color: #25c7ae;
+                  background: #f1f9f7;
+                }
+              }
+              .setbtn {
+                color: #fff;
+                background: $green-color;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 12px;
+                -webkit-appearance: none;
+                border: 1px solid $green-color;
+                border-radius: 6px;
+                padding: 6px 5px;
+                &:focus {
+                  box-shadow: none;
+                  outline: none;
+                }
+                &:hover {
+                  cursor: pointer;
+                  background: $green-color;
+                  color: #fff;
+                }
+              }
+              &.Accepted {
+              }
+            }
+          }
+        }
+      }
+      &.roletable {
+        .btn-holder {
+          .edit-btn {
+            padding: 0 5px;
+            display: inline-block;
+            color: #949494;
+            &:hover {
+              cursor: pointer;
+              i {
+                color: $green-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.generic-table-holder {
+  @include upto-desktop {
+    overflow-x: scroll;
+  }
+  .dataTables_wrapper {
+    .dataTables_paginate {
+      float: none;
+
+      .paginate_button {
+        padding: 0;
+
+        &.page-item {
+          &:hover {
+            background: transparent;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .table {
+    border: 0;
+
+    tr {
+      .check-holder {
+        .checkmark {
+          left: 0;
+          right: auto;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      th {
+        padding: 20px 15px;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: $font-poppinsM;
+        color: #414d55;
+        border: 0;
+        background: #f5f5f5;
+        min-width: auto;
+        box-sizing: content-box;
+        white-space: nowrap;
+        @include upto-desktop {
+          font-size: 14px;
+          line-height: 14px;
+          padding: 16px 12px;
+        }
+        .ordericon {
+          margin-left: 5px;
+          vertical-align: top;
+        }
+      }
+
+      td {
+        padding: 30px 15px;
+        border: none;
+        border-bottom: 1px dashed #a2c0d4;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: $font-poppinsR;
+        white-space: nowrap;
+        color: #949494;
+        @include upto-desktop {
+          font-size: 14px;
+          line-height: 14px;
+          padding: 24px 12px;
+        }
+        &.boldname,
+        .name-div {
+          font-size: 16px;
+          font-family: $font-poppinsM;
+          color: #414d55;
+          @include upto-desktop {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+        &.demo-row-accepted {
+          color: #5d90f3;
+          font-weight: 500;
+        }
+        &.demo-row-rejected {
+          color: #fc6b58;
+          font-weight: 500;
+        }
+        &.demo-row {
+          color: $green-color;
+          font-weight: 500;
+        }
+        &.boldname {
+          color: #000;
+        }
+        .detail-btn {
+          color: $green-color;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 12px;
+          -webkit-appearance: none;
+          background: transparent;
+          border: 1px solid $green-color;
+          border-radius: 56.01px;
+          padding: 8px 14px;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            cursor: pointer;
+            background: $green-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .btn-group {
+      .dropdown-toggle {
+        width: auto;
+        height: auto;
+        background: transparent;
+        border: none;
+        padding: 0 2px;
+        color: #949494;
+
+        &:before {
+          display: none;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .view-pager {
+    .dataTables_paginate {
+      display: inline-block;
+      vertical-align: middle;
+
+      .pagination {
+        margin: 0;
+      }
+
+      .paginate_button {
+        margin-right: 4px;
+
+        .page-link {
+          background: #ffffff;
+          border: 1px solid #e8e8e8;
+          box-sizing: border-box;
+          border-radius: 4px;
+          color: #a9a9a9;
+          height: 32px;
+          width: 32px;
+
+          &:before {
+            display: none;
+          }
+
+          &:after {
+            display: none;
+          }
+
+          &:hover {
+            color: #000;
+          }
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          i {
+            font-size: 16px;
+            vertical-align: top;
+            color: #52575c;
+          }
+        }
+
+        display: none;
+
+        &.active {
+          display: inline-block;
+
+          .page-link {
+            background: $green-color;
+            border: 1px solid $green-color;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+            padding-top: 6px;
+          }
+        }
+
+        &.next {
+          display: inline-block;
+        }
+
+        &.previous {
+          display: inline-block;
+        }
+      }
+    }
+
+    .dataTables_info {
+      margin-left: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 0;
+      font-size: 14px;
+      line-height: 22px;
+      color: #25282b;
+    }
+  }
+  .react-bootstrap-table-pagination {
+    .dropdown-toggle {
+      width: auto;
+      height: 40px;
+      padding: 0 5px;
+      color: #000;
+      border: 1px solid #e8e8e8;
+      font-size: 16px;
+      line-height: 16px;
+      &:focus {
+        box-shadow: none;
+        background: $green-color;
+        color: #fff;
+      }
+    }
+  }
+  &.prescriptiontable {
+    .table {
+      tr {
+        td {
+          vertical-align: middle;
+          &:last-child {
+            text-align: left;
+          }
+          .selectouter {
+            display: inline-block;
+            border: 1px solid #efefef;
+            border-radius: 1px;
+            padding: 2px 3px;
+            select {
+              border: 0;
+              color: #949494;
+              background: transparent;
+            }
+          }
+          span {
+            font-weight: bold;
+            // font-size: 12px;
+            line-height: 15px;
+            padding: 6px 12px;
+            display: inline-block;
+            color: #ffb800;
+            background: #fffaed;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            max-width: 120px;
+            &.Placed {
+            }
+            &.Delivered {
+              color: #0e93d2;
+              background: #e6f3fb;
+            }
+            &.Cancelled {
+              color: #fc6b58;
+              background: #fff2f0;
+            }
+            &.Accepted {
+              color: #25c7ae;
+              background: #f1f9f7;
+            }
+          }
+          .setbtn {
+            color: #fff;
+            background: $green-color;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            -webkit-appearance: none;
+            border: 1px solid $green-color;
+            border-radius: 6px;
+            padding: 6px 5px;
+            &:focus {
+              box-shadow: none;
+              outline: none;
+            }
+            &:hover {
+              cursor: pointer;
+              background: $green-color;
+              color: #fff;
+            }
+          }
+          &.Accepted {
+          }
+        }
+      }
+    }
+  }
+  &.roletable {
+    .btn-holder {
+      .edit-btn {
+        padding: 0 5px;
+        display: inline-block;
+        color: #949494;
+        &:hover {
+          cursor: pointer;
+          i {
+            color: $green-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.patient-details {
+  .details-hold {
+    background: #ffffff;
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    border-radius: 10px;
+    padding: 36px 35px 25px 25px;
+
+    .title-box {
+      .name {
+        font-size: 30px;
+        line-height: 36px;
+        font-family: $font-poppinsSB;
+        color: #000000;
+
+        @include upto-laptop {
+          font-size: 26px;
+          line-height: 30px;
+        }
+      }
+
+      .disease {
+        font-size: 20px;
+        line-height: 26px;
+        color: #000000;
+        font-family: $font-poppinsR;
+
+        @include upto-laptop {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        .time {
+          display: inline-block;
+          font-size: 14px;
+          line-height: 22px;
+          font-family: $font-poppinsR;
+          text-transform: capitalize;
+          color: #949494;
+        }
+      }
+    }
+
+    .btn-holder {
+      .btn {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: $font-poppinsM;
+        color: $green-color;
+
+        @include upto-laptop {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .btn-back {
+        background: $green-color;
+        color: #fff;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: $font-poppinsM;
+        padding: 12px 40px;
+        @include radius(100px);
+
+        @include upto-laptop {
+          font-size: 16px;
+          line-height: 24px;
+          padding: 8px 36px;
+        }
+      }
+    }
+
+    .info {
+      margin-top: 50px;
+
+      .info-title {
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $font-poppinsSB;
+        color: #000000;
+        margin-bottom: 40px;
+
+        @include upto-laptop {
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .table-information {
+        tr {
+          &:last-child {
+            td {
+              border: 0;
+            }
+          }
+
+          td {
+            padding: 20px;
+            width: 60%;
+            border: 0;
+            border-bottom: 1px dashed #a2c0d4;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: capitalize;
+
+            &:first-child {
+              padding-left: 0;
+            }
+
+            &:last-child {
+              max-width: 40%;
+            }
+
+            @include upto-laptop {
+              padding: 15px;
+              font-size: 13px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+
+      .prescription-head {
+        font-size: 18px;
+        line-height: 27px;
+        font-family: $font-poppinsR;
+        text-transform: capitalize;
+        color: #949494;
+
+        @include upto-laptop {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+
+      .table-prescription {
+        tr {
+          &.timings {
+            td {
+              font-size: 12px;
+              line-height: 15px;
+              padding: 15px 10px;
+              color: $green-color;
+            }
+          }
+
+          td {
+            border-top: 0;
+            border-bottom: 1px dashed #a2c0d4;
+            vertical-align: middle;
+          }
+
+          th {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 17px 10px;
+            font-family: $font-poppinsSB;
+            border: 0;
+            background: #fafbfd;
+            color: #000000;
+          }
+        }
+
+        .edit-btn {
+          padding: 10px 12px;
+          background: transparent;
+          display: inline-block;
+          color: #949494;
+
+          &:hover {
+            background: #ffffff;
+            box-shadow: 0px 3.0026px 8.25716px rgba(0, 0, 0, 0.07);
+            border-radius: 6.00521px;
+            color: $green-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/// Regular font family
+$text-font-stack: Arial, Helvetica !default;
+
+/// Digits font family
+$digits-font-stack: Arial, Helvetica !default;
+
+/// Assets location
+$assets-location: "../../" !default;
+
+/// Default font location
+// $font-location: $assets-location + "fonts" !default;
+$font-location: "../../fonts" !default;
+
+//@import url('../../fonts/');
+
+/// Wrapper maximum width
+$wrapper-max-width: 940px;
+
+/// Main navigation height
+$navigation-height: 64px;
+
+/// Main navigation mobile height
+$navigation-mobile-height: 60px;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @group Abstracts
+$breakpoints: (
+  "small": 479px,
+  "mobile": 767px,
+  "tablet": 991px,
+  "desktop": 1600px,
+  "large": 1920px,
+) !default;
+
+/// Fonts
+$font-poppinsR: "Poppins-Regular";
+$font-poppinsB: "Poppins-Bold";
+$font-poppinsM: "Poppins-Medium";
+$font-poppinsL: "Poppins-Light";
+$font-poppinsSB: "Poppins-SemiBold";
+$font-interR: "Inter Regular";
+$font-interM: "Inter Medium";
+$font-interB: "Inter Bold";
+$font-interSB: "Inter Semi Bold";
+
+/// Color
+$green-color: #25c7ae;
+$light-green: #ddfffa;
+$brand-color: #0e93d2;
+$base-color: #04004d;
+$label-color: #ef5e30;
+$placeholder-color: #999999;
+$grey-color: #9d9d9d;
+$border-color: #d2d4de;
+$error-color: #ff2323;

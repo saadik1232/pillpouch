@@ -1,0 +1,81 @@
+.footer{
+	margin: 20px 0 30px;
+	.footer-menu-heading{
+		font-size: 20px;
+		line-height: 25px;
+		letter-spacing: -0.01em;
+		font-family: $font-interB;
+		margin-bottom: 41px;
+		@include upto-desktop{
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 30px;
+		}
+		@include upto-tablet{
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 5px;
+		}
+		&.social-footer{
+			a{
+				background: #F9F9F9;
+				display: inline-block;
+				width: 28px;
+				height: 28px;
+				color: #646464;
+				border-radius: 4px;
+				text-align: center;
+				margin-right: 16px;
+				i{
+					font-size: 14px;
+					margin-top: 4px;
+				}
+				&:hover{
+					color: $green-color;
+				}
+				&:last-child{
+					margin: 0;
+				}
+			}
+		}
+	}
+	.footer-menu{
+		padding:0;
+		list-style: none;
+		margin: 0;
+		@include upto-tablet{
+			margin-bottom: 15px;
+		}
+		li{
+			margin-bottom: 18px;
+			@include upto-desktop{
+				margin-bottom: 14px;
+			}
+			@include upto-tablet{
+				margin-bottom: 10px;
+			}
+			a{
+				font-size: 16px;
+				line-height: 24px;
+				color: #7A7A7E;
+				&:hover{
+					color: $green-color;
+					text-decoration: none;
+				}
+				@include upto-tablet{
+					font-size: 14px;
+					line-height: 22px;
+				}
+			}
+		}
+	}
+	.copyright{
+		text-align: center;
+		padding:40px 0 10px;
+		p{
+			font-size: 14px;
+			line-height: 22px;
+			color: #7A7A7E;
+		}
+	}
+}

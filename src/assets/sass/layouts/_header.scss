@@ -1,0 +1,96 @@
+.header {
+	padding: 28px 0;
+	background: #FEFEFE;
+	@include upto-desktop{
+		padding: 20px 0;
+	}
+	@include upto-tablet{
+		padding: 15px 0;
+	}
+
+	.nav-top {
+		ul {
+			padding: 0;
+			list-style: none;
+			margin: 0;
+
+			li {
+				display: inline-block;
+
+				a {
+					font-size: 15px;
+					line-height: 22px;
+					color: #000;
+					font-family: $font-interM;
+					padding: 13px 23px;
+					text-transform: uppercase;
+					display: block;
+
+					&:hover {
+						text-decoration: none;
+						color: $green-color;
+					}
+					@include upto-desktop{
+						padding: 12px 20px;
+					}
+					@include upto-tablet{
+						font-size: 12px;
+						line-height: 17px;
+						padding:10px 12px;
+					}
+				}
+			}
+		}
+	}
+
+	.right-nav {
+		padding: 0;
+		list-style: none;
+		margin: 0;
+
+		li {
+			display: inline-block;
+
+			a {
+				font-size: 15px;
+				line-height: 22px;
+				color: #000;
+				font-family: $font-interM;
+				padding: 13px 23px;
+				display: block;
+				@include upto-desktop{
+					padding: 12px 20px;
+				}
+				@include upto-tablet{
+					font-size: 12px;
+					line-height: 17px;
+					padding:10px 12px;
+				}
+
+				&:hover {
+					color: $green-color;
+					text-decoration: none;
+				}
+				&.btn{
+					padding: 5px 12px;
+					color: #fff;
+					border-radius:0;
+					&:hover{
+						color: $green-color;
+					}
+				}
+			}
+		}
+	}
+	.desktop-nav{
+		@include upto-small{
+			display: none;
+		}
+	}
+	.mobile-nav{
+		display: none;
+		@include upto-small{
+			display: block;
+		}
+	}
+}

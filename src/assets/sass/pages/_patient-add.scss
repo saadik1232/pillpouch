@@ -1,0 +1,241 @@
+.add-patient {
+	position: relative;
+	padding: 70px 0 250px;
+
+	@include upto-tablet {
+		padding: 40px 0 150px;
+	}
+
+	@include upto-small {
+		position: static;
+	}
+
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 100px;
+		content: "";
+		display: block;
+		width: 284px;
+		height: 370px;
+		background: url($assets-location +"images/signup-bg.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+		z-index: -1;
+
+		@include upto-desktop {
+			width: 200px;
+			height: 270px;
+		}
+
+		@include upto-tablet {
+			width: 100px;
+			height: 130px;
+			top: auto;
+			bottom: 20%;
+		}
+
+		@include upto-small {
+			bottom: 15%;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		content: "";
+		display: block;
+		width: 472px;
+		height: 458px;
+		background: url($assets-location +"images/tablet-cup.jpg");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+		z-index: -1;
+
+		@include upto-desktop {
+			width: 310px;
+			height: 300px;
+		}
+
+		@include upto-tablet {
+			width: 210px;
+			height: 196px;
+		}
+	}
+
+	.section-head {
+		h2 {
+			font-family: $font-poppinsSB;
+			font-size: 48px;
+			line-height: 60px;
+
+			@include upto-desktop {
+				font-size: 36px;
+				line-height: 48px;
+			}
+
+			@include upto-tablet {
+				font-size: 34px;
+				line-height: 50px;
+			}
+
+			@include upto-small {
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
+
+		h4 {
+			font-size: 24px;
+			line-height: 36px;
+			font-family: $font-poppinsM;
+
+			@include upto-desktop {
+				font-size: 20px;
+				line-height: 30px;
+			}
+
+			@include upto-tablet {
+				font-size: 18px;
+				line-height: 28px;
+			}
+
+			@include upto-small {
+				font-size: 16px;
+				line-height: 26px;
+			}
+
+			a {
+				color: $green-color;
+
+				&:hover {
+					color: $green-color;
+				}
+			}
+		}
+	}
+
+	.quantity {
+		text-align: center;
+
+		.button-container {
+			display: inline-block;
+
+			button {
+				display: inline-block;
+				background: #F1F9F7;
+				border-radius: 50%;
+				color: $green-color;
+				border: 0;
+				font-size: 20px;
+				line-height: 49px;
+				font-family: $font-poppinsM;
+				width: 49px;
+				height: 49px;
+
+				&:hover {
+					background: $green-color;
+					color: #F1F9F7;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			input {
+				display: inline-block;
+				max-width: 60px;
+				margin: 0 15px;
+				border: 0;
+				font-family: $font-poppinsM;
+				font-size: 25px;
+				line-height: 37px;
+				text-transform: capitalize;
+				color: #000000;
+			}
+		}
+	}
+
+	.form-holder {
+		.add-another{
+			color: #000;
+			display: inline-block;
+			position: relative;
+			font-size: 22px;
+			line-height: 24px;
+			font-family: $font-poppinsM;
+			&:hover{
+				text-decoration: none;
+				color:$green-color;
+				&:before{
+					background:$green-color;
+				}
+			}
+			&:before{
+				width: 70%;
+				height: 2px;
+				display: block;
+				content: "";
+				position:absolute;
+				left: 0;
+				bottom: 0;
+				background:#000;
+			}
+		}
+		.radio-hold {
+			display: block;
+			margin: 15px 0 0;
+			.label{
+				color: #000;
+				font-size: 22px;
+				line-height: 33px;
+				font-family: $font-poppinsM;
+				display: inline-block;
+				margin-right: 30px;
+			}
+
+			.radio-holder {
+				position: relative;
+				display: inline-block;
+				padding: 12px 36px;
+				margin: 0 20px 10px 0;
+				cursor: pointer;
+				color: $green-color;
+				font-size: 18px;
+				line-height: 27px;
+				background: #F1F9F7;
+				font-family: $font-poppinsM;
+				@include radius(100px);
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+
+				&:hover {
+					color: #fff;
+					background: $green-color;
+				}
+
+				input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+				}
+
+				&.active {
+					color: #fff;
+					background: $green-color;
+				}
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+
+
+	}
+}

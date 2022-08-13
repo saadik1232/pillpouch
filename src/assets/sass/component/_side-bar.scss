@@ -1,0 +1,215 @@
+.sidebar {
+  background: #f5f5f5;
+  vertical-align: top;
+  @include transition(all 0.3s ease-in-out);
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 102;
+  // -webkit-box-shadow: 0px 57px 5px 0px rgba(0,0,0,0.16);
+  // -moz-box-shadow: 0px 57px 5px 0px rgba(0,0,0,0.16);
+  // box-shadow: 0px 57px 5px 0px rgba(0,0,0,0.16);
+  // padding: 30px 0 0 0;
+  @include upto-laptop {
+    width: 175px;
+    // padding: 20px 0 0 0;
+  }
+  &.mobile-menu {
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0;
+  }
+  @include upto-small() {
+    left: -100%;
+  }
+  &.active {
+    left: 0;
+  }
+  .logo {
+    // background-color: #000;
+    text-align: center;
+    padding: 18px 0 40px;
+    @include upto-desktop {
+      padding: 12px 0 26px;
+    }
+    a {
+      display: inline-block;
+    }
+    img {
+      display: inline-block;
+      // max-width: 82px;
+    }
+  }
+
+  .logo-holder {
+    text-align: center;
+    padding: 35px 0 25px;
+    img {
+      max-width: 113px;
+    }
+  }
+  // .nav-list {
+  //   list-style: none;
+  //   padding: 0;
+  .nav-link {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 11px;
+    font-family: $font-poppinsM;
+    position: relative;
+    // &:hover,
+    // &.active {
+    //   .nav-link {
+    //     color: $green-color;
+    //   }
+    // }
+    // &.active {
+    //   .sub-nav {
+    //     display: block;
+    //   }
+    // }
+    @include upto-laptop {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 7px;
+    }
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 4px;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 28px;
+      height: 25px;
+      background: url($assets-location + "images/left-icon-sprite.png")
+        no-repeat 0 0;
+      margin: 0 12px;
+      background-position: -26px 0;
+      background-size: 54px auto;
+      @include upto-laptop {
+        margin: 0 7px;
+      }
+    }
+    &.active,
+    &:hover {
+      .icon {
+        background-position: 1px 0;
+      }
+    }
+    &.appointments {
+      .icon {
+        background-position: -26px -26px;
+      }
+      &.active,
+      &:hover {
+        color: $green-color;
+        .icon {
+          background-position: 1px -26px;
+        }
+      }
+    }
+    &.patients {
+      .icon {
+        background-position: -26px -47px;
+      }
+      &.active,
+      &:hover {
+        color: $green-color;
+        .icon {
+          background-position: 0 -47px;
+        }
+      }
+    }
+    &.doctors {
+      .icon {
+        background-position: -26px -75px;
+      }
+      &.active,
+      &:hover {
+        color: $green-color;
+        .icon {
+          background-position: 0 -75px;
+        }
+      }
+    }
+    &.messages {
+      .icon {
+        background-position: -26px -104px;
+      }
+      &.active,
+      &:hover {
+        color: $green-color;
+        .icon {
+          background-position: 0 -104px;
+        }
+      }
+    }
+    &.reviews {
+      .icon {
+        background-position: -26px -134px;
+      }
+      &.active,
+      &:hover {
+        color: $green-color;
+        .icon {
+          background-position: 0 -134px;
+        }
+      }
+    }
+    &.finances {
+      .icon {
+        background-position: -26px -162px;
+      }
+      &.active,
+      &:hover {
+        color: $green-color;
+        .icon {
+          background-position: 1px -162px;
+        }
+      }
+    }
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #414d55;
+    display: block;
+    padding: 10px 0 10px 5px;
+    &.active {
+      color: $green-color;
+    }
+    @include upto-laptop {
+      padding: 6px 0 6px 2px;
+    }
+  }
+}
+.sub-nav {
+  padding: 0 0 15px 62px;
+  display: none;
+  .sub-nav-item {
+    font-family: $font-poppinsR;
+    font-size: 11px;
+    line-height: 15px;
+    .sub-nav-link {
+      display: block;
+      color: #9caedb;
+      //background-image: url($assets-location + "images/sub-menu-bullet1.png");
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      padding: 9px 0 9px 22px;
+      text-decoration: none;
+      &:hover,
+      &.active,
+      &.router-link-exact-active {
+        //background-image: url($assets-location + "images/sub-menu-bullet2.png");
+        color: #fff;
+      }
+    }
+  }
+}
+// }

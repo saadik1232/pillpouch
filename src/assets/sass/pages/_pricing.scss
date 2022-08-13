@@ -1,0 +1,302 @@
+.free-shipping {
+	margin: 160px 0 50px;
+	position: relative;
+	@include upto-desktop{
+		margin: 120px 0 50px;
+	}
+	@include upto-tablet{
+		margin: 100px 0 40px;
+	}
+	&:before {
+		position: absolute;
+		left: 0;
+		top: -70px;
+		content: "";
+		display: block;
+		width: 65px;
+		height: 73px;
+		background: url($assets-location +"images/3d-box-home.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+		@include upto-desktop{
+			top: -90px;
+			width: 55px;
+			height: 63px;
+		}
+		@include upto-tablet{
+			top: -70px;
+			width: 45px;
+			height: 53px;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		right: 0;
+		bottom: 30px;
+		content: "";
+		display: block;
+		width: 58px;
+		height: 117px;
+		background: url($assets-location +"images/circled-sphere-light.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+		@include upto-desktop{
+			width: 48px;
+			height: 107px;
+			bottom: 50px;
+		}
+		@include upto-tablet{
+			display: none;
+		}
+	}
+	.section-title{
+		display: inline-block;
+		max-width: 650px;
+	}
+	h3{
+		font-size: 40px;
+		line-height: 54px;
+		font-family: $font-interB;
+		color: #04004D;
+		padding: 0 0 0 60px;
+		@include upto-desktop{
+			font-size: 34px;
+			line-height: 48px;
+		}
+		@include upto-tablet{
+			padding-left: 0;
+			margin-bottom: 20px;
+			font-size: 26px;
+			line-height: 42px;
+		}
+		@include upto-small{
+			font-size: 22px;
+			line-height: 34px;
+		}
+	}
+	.pricing-card{
+		background: #FFFFFF;
+		border: 1.5px solid #EBEBEB;
+		box-sizing: border-box;
+		border-radius: 6px;
+		padding: 56px 20px;
+		min-height: 100%;
+		@include upto-desktop{
+			padding: 40px 15px;
+		}
+		@include upto-tablet{
+			padding: 30px 15px;
+		}
+		@include upto-small{
+			margin-bottom: 15px;
+		}
+		br{
+			display: none;
+			@include upto-tablet{
+				display: inline-block;
+			}
+		}
+		img{
+			margin-bottom: 72px;
+			@include upto-desktop{
+				max-width: 50px;
+				margin-bottom: 40px;
+			}
+			@include upto-tablet{
+				max-width: 40px;
+				margin-bottom: 20px;
+			}
+		}
+		h4{
+			font-size: 22px;
+			line-height: 32px;
+			font-family: $font-interB;
+			color: #04004D;
+			margin-bottom: 18px;
+			@include upto-desktop{
+				font-size: 20px;
+				line-height: 30px;
+				margin-bottom: 10px;
+			}
+			@include upto-tablet{
+				font-size: 18px;
+				line-height: 28px;
+			}
+			@include upto-small{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		p{
+			font-size: 16px;
+			line-height: 26px;
+			color: #000000;
+		}
+	}
+}
+
+
+.flexible-payment{
+	margin: 150px 0;
+	padding: 116px 0;
+	background: #11AB93;
+	@include upto-desktop{
+		margin: 80px 0;
+		padding: 80px 0;
+	}
+	@include upto-tablet{
+		margin: 60px 0;
+		padding: 50px 0;
+	}
+	@include upto-small{
+		margin: 30px 0;
+		padding:40px 0;
+	}
+	.section-head{
+		margin-bottom: 60px;
+		.section-title{
+			color: #fff;
+			margin-bottom: 20px;
+			@include upto-tablet{
+				margin-bottom: 5px;
+			}
+		}
+		h3{
+			font-size: 20px;
+			line-height: 26px;
+			text-align: center;
+			color: #E9F3F8;
+			@include upto-tablet{
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 15px;
+			}
+			@include upto-small{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+	.payment-card{
+		padding: 62px 23px;
+		border-radius: 6px;
+		text-align: center;
+		min-height: 100%;
+		&:hover{
+			background: #2DC5AE;
+			img{
+				display: none;
+				&.show-hover{
+					display: inline-block;
+				}
+			}
+		}
+		@include upto-desktop{
+			padding:42px 15px;
+		}
+		@include upto-tablet{
+			padding: 30px 15px;
+		}
+		img{
+			margin-bottom: 46px;
+			@include upto-desktop{
+				margin-bottom: 25px;
+			}
+			@include upto-tablet{
+				margin-bottom: 20px;
+				max-width: 50px;
+			}
+			@include upto-tablet{
+				margin-bottom: 15px;
+			}
+			&.show-hover{
+				display: none;
+			}
+		}
+		h4{
+			font-size: 22px;
+			line-height: 32px;
+			font-family: $font-poppinsB;
+			text-align: center;
+			color: #FFFFFF;
+			margin-bottom: 12px;
+			@include upto-desktop{
+				font-size: 20px;
+				line-height: 30px;
+			}
+			@include upto-tablet{
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 0;
+			}
+			@include upto-small{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		p{
+			font-size: 16px;
+			line-height: 26px;
+			text-align: center;
+			color: #E9F3F8;
+			font-family: $font-poppinsR;
+			@include upto-tablet{
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+
+.you-wondering{
+	.wonder-card{
+		min-height: 100%;
+		padding: 60px 40px 40px;
+		border-radius: 6px;
+		@include upto-desktop{
+			padding:40px 30px 30px;
+		}
+		@include upto-tablet{
+			padding: 30px 15px;
+		}
+		h4{
+			font-size: 22px;
+			line-height: 32px;
+			font-family: $font-poppinsB;
+			color: #04004D;
+			margin-bottom: 22px;
+			@include upto-desktop{
+				font-size: 20px;
+				line-height: 30px;
+				margin-bottom: 15px;
+			}
+			@include upto-tablet{
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 10px;
+			}
+			@include upto-small{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		p{
+			font-size: 16px;
+			line-height: 26px;
+			color: #000000;
+			@include upto-tablet{
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+		&:hover{
+			background: #FFFFFF;
+			box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.07);
+		}
+	}
+}
+
